@@ -567,9 +567,10 @@ if __name__ == '__main__':
     window = QMainWindow()
     image_processing_widget = ImageProcessingWidget()
     window.setCentralWidget(image_processing_widget)
-    window.setWindowTitle("岩石分类系统")
+    window.setWindowTitle("基于深度学习技术的岩石分类识别系统")
     screen = QDesktopWidget().screenGeometry()
     size = window.geometry()
     window.setGeometry(int((screen.width() - size.width()) / 2), int((screen.height() - size.height()) / 2), 800, 450)
     window.show()
+
     sys.exit(app.exec_())
